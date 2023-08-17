@@ -11,5 +11,7 @@
         BrokenBones,
         Impotention,
         Gonorrhea,
+        Lycantrophy,
+        Vampirist
     }
 }

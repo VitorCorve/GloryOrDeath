@@ -6,7 +6,7 @@ using GloryOrDeath.CORE.Reputations;
 using GloryOrDeath.CORE.Skills;
 using GloryOrDeath.CORE.Weaknesses.Abstract;
 
-namespace GloryOrDeath.CORE.Engine.Characters
+namespace GloryOrDeath.CORE.Characters
 {
     public class Character : IUniqualObject
     {
@@ -19,11 +19,8 @@ namespace GloryOrDeath.CORE.Engine.Characters
         public int Age { get; }
         public string Name { get; }
         public bool IsAlive { get; }
-        public bool IsVampire { get; }
-        public bool IsWerewolf { get; }
         public Guid ID { get; }
         public ICharacterKind Kind { get; }
-
 
         public Character
             (
@@ -36,8 +33,6 @@ namespace GloryOrDeath.CORE.Engine.Characters
                 int age,
                 string name,
                 bool isAlive,
-                bool isVampire,
-                bool isWerewolf,
                 Guid id,
                 ICharacterKind kind
 
@@ -48,8 +43,6 @@ namespace GloryOrDeath.CORE.Engine.Characters
             Age = age;
             Name = name;
             IsAlive = isAlive;
-            IsVampire = isVampire;
-            IsWerewolf = isWerewolf;
             ID = id;
             Weaknesses = weaknesses;
             Reputations = reputations;

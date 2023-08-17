@@ -1,4 +1,4 @@
-﻿namespace GloryOrDeath.CORE.Engine.Characters
+﻿namespace GloryOrDeath.CORE.Characters
 {
     public enum CharacterSex
     {
