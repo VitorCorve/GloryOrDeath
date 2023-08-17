@@ -1,6 +1,6 @@
-﻿using GloryOrDeath.CORE.Infrastructure;
+﻿using GloryOrDeath.CORE.Infrastructure.Abstract;
 
-namespace GloryOrDeath.CORE.Engine
+namespace GloryOrDeath.CORE.Engine.Abstract
 {
     public interface IEvent : IUniqualObject
     {

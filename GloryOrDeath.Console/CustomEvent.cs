@@ -1,14 +1,14 @@
-﻿using GloryOrDeath.CORE.Engine;
+﻿using GloryOrDeath.CORE.Engine.Abstract;
 
 namespace GloryOrDeath.Console
 {
     internal class CustomEvent : IEvent
     {
-        public Guid Guid { get; }
+        public Guid ID { get; }
         private readonly string _name;
         public CustomEvent(string eventName)
         {
-            Guid = Guid.NewGuid();
+            ID = Guid.NewGuid();
             _name = eventName;
         }
 

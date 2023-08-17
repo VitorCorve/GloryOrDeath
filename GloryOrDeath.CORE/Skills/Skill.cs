@@ -1,35 +1,29 @@
 ﻿namespace GloryOrDeath.CORE.Skills
 {
-    public enum Skill
+    public class Skill
     {
-        Swords,
-        Axes,
-        Unarmed,
-        Parry,
-        Stealth,
-        Initiative,
-        Speech,
-        RealEstate,
-        Archery,
-        Leadership,
-        Business,
-        Smithing,
-        Alchemy,
-        MagicOfFire,
-        MagicOfFrost,
-        MagicOfStorm,
-        MagicOfRestoration,
-        MagicOfIllusion,
-        MagicOfWitchcraft,
-        MagicOfDarksouls,
-        Riding,
-        Tracking,
-        Ambush,
-        FirstAid,
-        Attention,
-        Marine,
-        Building,
-        Warcraft,
-        MagicResistance,
+        public const int MinValue = 0;
+        public const int MaxValue = 1000;
+        public SkillEnumerable Type { get; }
+        public int Value { get; private set; }
+
+        public string Description { get; set; }
+        public Skill(int value, SkillEnumerable type)
+        {
+            Value = value;
+            Type = type;
+        }
+
+        public void StageUp()
+        {
+            if (Value < MaxValue)
+                Value++;
+        }
+
+        public void StageDown()
+        {
+            if (Value > MinValue)
+                Value--;
+        }
     }
 }

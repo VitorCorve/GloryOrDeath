@@ -1,4 +1,7 @@
-﻿namespace GloryOrDeath.CORE.Constants
+﻿using GloryOrDeath.CORE.Skills;
+using System.Collections.ObjectModel;
+
+namespace GloryOrDeath.CORE.Constants
 {
     public static class GlobalVariables
     {

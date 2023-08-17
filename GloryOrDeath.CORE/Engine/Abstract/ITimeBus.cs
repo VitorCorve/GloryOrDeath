@@ -1,4 +1,4 @@
-﻿namespace GloryOrDeath.CORE.Engine
+﻿namespace GloryOrDeath.CORE.Engine.Abstract
 {
     public interface ITimeBus
     {

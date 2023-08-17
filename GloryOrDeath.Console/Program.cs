@@ -1,5 +1,5 @@
 ﻿using GloryOrDeath.Console;
-using GloryOrDeath.CORE.Engine;
+using GloryOrDeath.CORE.Engine.TimeBus;
 
 CustomEvent customEvent = new("First event");
 CustomEvent customEvent2 = new("Second event");

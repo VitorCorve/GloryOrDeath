@@ -1,8 +1,9 @@
 ﻿using GloryOrDeath.CORE.Constants;
+using GloryOrDeath.CORE.Engine.Abstract;
 using GloryOrDeath.DotnetExtensions.List;
 using GloryOrDeath.Instrumentary.Clock;
 
-namespace GloryOrDeath.CORE.Engine
+namespace GloryOrDeath.CORE.Engine.TimeBus
 {
     public class TimeBus : ITimeBus
     {
@@ -43,7 +44,7 @@ namespace GloryOrDeath.CORE.Engine
 
         public void Unsubscribe(IEvent effect)
         {
-            _events.RemoveByCondition(effect, _events.FirstOrDefault(x => x.Guid == effect.Guid) != null);
+            _events.RemoveByCondition(effect, _events.FirstOrDefault(x => x.ID == effect.ID) != null);
         }
     }
 }
