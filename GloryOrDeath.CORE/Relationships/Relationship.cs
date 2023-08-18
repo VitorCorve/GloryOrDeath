@@ -5,6 +5,12 @@
         public const int MinStage = -10;
         public const int MaxStage = 10;
         public int Stage { get; set; }
+        public Relationship(Guid from, Guid to, int stage)
+        {
+            From = from;
+            To = to;
+            Stage = stage;
+        }
 
         public void StageUp()
         {

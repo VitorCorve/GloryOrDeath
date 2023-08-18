@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace GloryOrDeath.CORE.Constants
 {
-    internal class SkillsVariables
+    public class SkillsVariables
     {
         public readonly static ReadOnlyCollection<SkillEnumerable> SKILLS_LIST = new(new List<SkillEnumerable>
         {
@@ -37,5 +37,6 @@ namespace GloryOrDeath.CORE.Constants
             SkillEnumerable.Tracking,
             SkillEnumerable.Unarmed,
             SkillEnumerable.Warcraft,
+        });
     }
 }

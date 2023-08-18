@@ -1,4 +1,4 @@
-﻿using GloryOrDeath.CORE.Fractions;
+﻿using GloryOrDeath.CORE.Engine.World.Fractions;
 
 namespace GloryOrDeath.CORE.Reputations
 {
@@ -6,8 +6,15 @@ namespace GloryOrDeath.CORE.Reputations
     {
         private const int MinValue = -100;
         private const int MaxValue = 100;
-        public FractionEnumerable Fraction { get; set; }
+        public FractionsEnumerable Fraction { get; set; }
         public int Value { get; set; }
+
+        public Reputation(FractionsEnumerable fraction, int value)
+        {
+            Fraction = fraction;
+            Value = value;
+        }
+
         public void Upgrade()
         {
             if (Value < MaxValue)

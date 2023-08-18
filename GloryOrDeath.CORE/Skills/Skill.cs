@@ -5,7 +5,7 @@
         public const int MinValue = 0;
         public const int MaxValue = 1000;
         public SkillEnumerable Type { get; }
-        public int Value { get; private set; }
+        public int Value { get; set; }
 
         public string Description { get; set; }
         public Skill(int value, SkillEnumerable type)

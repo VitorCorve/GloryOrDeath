@@ -9,5 +9,13 @@
                 list.Remove(entity);
             }
         }
+
+        public static void AddByCondition<T>(this List<T> list, T entity, bool condition)
+        {
+            if (condition)
+            {
+                list.Add(entity);
+            }
+        }
     }
 }

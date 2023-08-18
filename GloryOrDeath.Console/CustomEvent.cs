@@ -2,7 +2,7 @@
 
 namespace GloryOrDeath.Console
 {
-    internal class CustomEvent : IEvent
+    public class CustomEvent : IEvent
     {
         public Guid ID { get; }
         private readonly string _name;
