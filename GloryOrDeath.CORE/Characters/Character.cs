@@ -1,5 +1,7 @@
 ﻿using GloryOrDeath.CORE.Creatures;
 using GloryOrDeath.CORE.Infrastructure.Abstract;
+using GloryOrDeath.CORE.Locations;
+using GloryOrDeath.CORE.Locations.Properties;
 using GloryOrDeath.CORE.Needs;
 using GloryOrDeath.CORE.Relationships;
 using GloryOrDeath.CORE.Reputations;
@@ -17,10 +19,14 @@ namespace GloryOrDeath.CORE.Characters
         public IEnumerable<Need> Needs { get; set; }
         public CharacterSex Sex { get; }
         public int Age { get; }
+        public DateTime Born { get; }
         public string Name { get; }
         public bool IsAlive { get; }
         public Guid ID { get; }
         public ICharacterKind Kind { get; }
+        public Character? Mother { get; private set; }
+        public Character? Father { get; private set; }
+        public Location? Location { get; private set; }
 
         public Character
             (
@@ -30,7 +36,7 @@ namespace GloryOrDeath.CORE.Characters
                 IEnumerable<Relationship> relationships,
                 IEnumerable<Need> needs,
                 CharacterSex sex,
-                int age,
+                DateTime born,
                 string name,
                 bool isAlive,
                 Guid id,
@@ -40,7 +46,7 @@ namespace GloryOrDeath.CORE.Characters
         {
             Skills = skills;
             Sex = sex;
-            Age = age;
+            Born = born;
             Name = name;
             IsAlive = isAlive;
             ID = id;
@@ -49,6 +55,17 @@ namespace GloryOrDeath.CORE.Characters
             Relationships = relationships;
             Needs = needs;
             Kind = kind;
+        }
+
+        public void SetMother(Character mother)
+        {
+            Mother = mother;
+        }
+
+
+        public void SetFather(Character father)
+        {
+            Father = father;
         }
     }
 }

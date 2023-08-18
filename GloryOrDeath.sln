@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloryOrDeath.Console", "Glo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloryOrDeath.CORE", "GloryOrDeath.CORE\GloryOrDeath.CORE.csproj", "{D71C134D-7142-4248-9078-C31C9297EF71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloryOrDeath.DEBUG_UI", "GloryOrDeath.DEBUG_UI\GloryOrDeath.DEBUG_UI.csproj", "{6C8A4DB1-CFA2-46EC-B7C1-9438946E79A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloryOrDeath.DEBUG_UI", "GloryOrDeath.DEBUG_UI\GloryOrDeath.DEBUG_UI.csproj", "{6C8A4DB1-CFA2-46EC-B7C1-9438946E79A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloryOrDeath.WPF.CORE", "GloryOrDeath.WPF.CORE\GloryOrDeath.WPF.CORE.csproj", "{F5E54C93-DE3D-403C-9E4D-D3E31E98D0D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloryOrDeath.WPF.CORE", "GloryOrDeath.WPF.CORE\GloryOrDeath.WPF.CORE.csproj", "{F5E54C93-DE3D-403C-9E4D-D3E31E98D0D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloryOrDeath.WPF.MapManualDrawingTool", "GloryOrDeath.WPF.MapManualDrawingTool\GloryOrDeath.WPF.MapManualDrawingTool.csproj", "{81867DF9-3468-4AF2-A266-E06582461806}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F5E54C93-DE3D-403C-9E4D-D3E31E98D0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5E54C93-DE3D-403C-9E4D-D3E31E98D0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5E54C93-DE3D-403C-9E4D-D3E31E98D0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81867DF9-3468-4AF2-A266-E06582461806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81867DF9-3468-4AF2-A266-E06582461806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81867DF9-3468-4AF2-A266-E06582461806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81867DF9-3468-4AF2-A266-E06582461806}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

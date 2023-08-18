@@ -145,9 +145,10 @@ namespace GloryOrDeath.DEBUG_UI.ViewModels
                 new Need(NeedsEnumerable.Thirtness, 3),
                 new Need(NeedsEnumerable.Exhaustion, 1),
             };
-            Character marcus = new(marcusSkills, weaknesses, marcusReputation, marcusRelationships, marcusNeeds, CharacterSex.Male, 27, "Marcus", true, marcusGuid, new Human());
-            Character cienna = new(ciennaSkills, weaknesses, ciennaReputation, ciennaRelationships, ciennaNeeds, CharacterSex.Female, 27, "Cienna", true, ciennaGuid, new Vampire());
-            Character raquel = new(raquelSkills, weaknesses, raquelReputation, raquelRelationships, raquelNeeds, CharacterSex.Female, 27, "Raquel", true, raquelGuid, new Werewolf());
+
+            Character marcus = new(marcusSkills, weaknesses, marcusReputation, marcusRelationships, marcusNeeds, CharacterSex.Male, new DateTime(year: 1399, month: 2, day: 11, hour: 12, minute: 3, 0), "Marcus", true, marcusGuid, new Human());
+            Character cienna = new(ciennaSkills, weaknesses, ciennaReputation, ciennaRelationships, ciennaNeeds, CharacterSex.Female, new DateTime(year: 1382, month: 2, day: 11, hour: 12, minute: 3, 0), "Cienna", true, ciennaGuid, new Vampire());
+            Character raquel = new(raquelSkills, weaknesses, raquelReputation, raquelRelationships, raquelNeeds, CharacterSex.Female, new DateTime(year: 1392, month: 2, day: 11, hour: 12, minute: 3, 0), "Raquel", true, raquelGuid, new Werewolf());
 
             Characters.Add(marcus);
             Characters.Add(cienna);

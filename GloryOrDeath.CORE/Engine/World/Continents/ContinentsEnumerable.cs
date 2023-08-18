@@ -2,6 +2,7 @@
 {
     public enum ContinentsEnumerable
     {
+        Ocean,
         Esparda,
         Gloria
     }
